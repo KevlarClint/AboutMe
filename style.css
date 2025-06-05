@@ -168,9 +168,8 @@ main {
   align-items: center;
   height: 100vh;
   height: 100svh;
-
   /* background: url(assets/wave3.svg); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 89%;
   background-attachment: fixed;
@@ -180,7 +179,7 @@ main {
   }
   @media (width <= 425px) {
     background-image: url(assets/320.svg);
-  }
+  } */
 }
 
 .container1 {
