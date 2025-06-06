@@ -26,20 +26,17 @@
                 opacity: 0;
                 scale: 0.5;
             }
-
             to {
                 opacity: 1;
                 scale: 1;
             }
         }
-
         .anime {
             animation: anime linear;
             animation-timeline: view();
-            animation-range: entry 0% cover 30%;
+            animation-range: entry 0% cover 20%;
         }
-
-        /* Animation and shi but sideways*/
+        /* Animation and shi but sideways (left)*/
         @keyframes mamawjud {
             from {
                 opacity: 0;
@@ -51,9 +48,25 @@
                 transform: translateX(0px);
             }
         }
-
         .mamawjud {
             animation: mamawjud linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 30%;
+        }
+        /* Animation and shi but op side (right)*/
+        @keyframes waza {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        .waza {
+            animation: waza linear;
             animation-timeline: view();
             animation-range: entry 0% cover 30%;
         }
@@ -107,24 +120,24 @@
         <div class="container1" id="aboutme">
             <div class="left">
                 <div class="left-top">
-                    <button class="cta-btn">&#128075; &nbsp; Wasup</button>
+                    <button class="cta-btn hidden" >&#128075; &nbsp; Wasup</button>
                     <br>
-                    <p class="intro">I'm Clint,</p>
-                    <p class="title">A Dedicated </p>
-                    <p class="title">Programming Student</p>
-                    <p class="info">
+                    <p class="intro hidden"  >I'm Clint,</p>
+                    <p class="title hidden"  >A Dedicated </p>
+                    <p class="title hidden"  >Programming Student</p>
+                    <p class="info hidden"  >
                         "Dedicated TVL ICT student passionate about technology and innovation,
                         skilled in network systems, programming, and multimedia design,
                         committed to continuous learning and excellence in the field of ict."
                     </p>
                 </div>
                 <div class="left-bottom">
-                    <button>About Me</button>
-                    <button>Contact Me</button>
+                    <button class="hidden"  >About Me</button>
+                    <button class="hidden"  >Contact Me</button>
                 </div>
             </div>
             <div class="right">
-                <img src="assets/maxwell_.gif" alt="Animated GIF" width="250">
+                <img src="assets/maxwell_.gif" alt="Animated GIF" width="250" class="hidden">
             </div>
         </div>
     </main>
