@@ -33,7 +33,7 @@ nav {
   align-items: center;
   box-shadow: var(--main-shadow);
   z-index: 1;
-  position: sticky;
+  position: absolute;
   top: 10px;
   left: 0;
   right: 0;
