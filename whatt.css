@@ -18,6 +18,24 @@ html {
     0px 7px 10px rgba(0, 0, 0, 0.15);
   --orange: #ff9b17;
 }
+/* animation but in js */
+.hidden {
+  opacity: 0;
+  /* filter: blur(5px); 
+  transform: translateX(-100% );  */
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  /* filter: blur(0); 
+  transform: translateX(0 ); */
+}
+
+/* @media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+} */
 body {
   padding: 0;
   margin: 0;
@@ -51,6 +69,7 @@ nav .logo img {
   height: 25px;
   width: auto;
   margin-right: 10px;
+  filter: drop-shadow(0px 0px 10px gray);
 }
 nav .logo h1 {
   font-size: 1.4rem;
@@ -169,8 +188,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  height: 90svh;
+  height: 100vh;
+  height: 100svh;
   /* background: url(assets/wave3.svg); */
   /* background-repeat: no-repeat;
   background-size: cover;
@@ -370,11 +389,12 @@ main {
   height: 50px;
 }
 
-.skills .bottom-icons p {
+.skills .bottom-icons p, .skills .bottom-icons a {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
   color: #333;
+  cursor: pointer;
 }
 
 /*  */
@@ -513,7 +533,7 @@ main {
   }
 }
 
-/* EXTRA */
+/* SOCIAL MEDIA */
 .extra {
   display: flex;
   justify-content: center;
@@ -536,31 +556,3 @@ main {
   }
 }
 
-.skills .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 1600px;
-  gap: 40px;
-}
-
-
-/* animation but in js */
-.hidden {
-  opacity: 0;
-   /* filter: blur(5px); 
-  transform: translateX(-100% );  */
-  transition: all 1s;
-}
-.show {
- opacity: 1;
- /* filter: blur(0); 
-  transform: translateX(0 ); */
-}
-
-/* @media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-} */

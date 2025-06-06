@@ -7,6 +7,7 @@
     <title>About Me</title>
     <link rel="shortcut icon" href="icon/icons8-citrus-100.png" type="image/x-icon">
     <link rel="stylesheet" href="whatt.css">
+    <link rel="stylesheet" href="loading.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -74,20 +75,37 @@
 </head>
 
 <body>
+    <!-- Loader with rotating greetings -->
+    <div id="loader">
+        <div class="greeting-container">
+            <span class="greeting" id="greeting-text">Hello</span>
+        </div>
+    </div>
+    
+    <!-- Main content -->
+    <div id="main-content" style="opacity: 0;">
+    </div>
+
+    
+
     <!-- PREMADE NAVBAR -->
     <nav>
         <div class="logo">
+            <img src="icon/code.png" alt="">
             <h1>CLINT</h1>
         </div>
         <ul>
             <li>
-                <a href="#aboutme">AboutMe</a>
+                <a href="#aboutme" style="color: white;">AboutMe</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#socials">Social Media</a>
             </li>
             <li>
                 <a href="#">Contact Us</a>
@@ -112,6 +130,21 @@
             </li>
             <li>
                 <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a><------></a>
+            </li>
+            <li>
+                <a href="https://github.com/KevlarClint">Github</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@Clintxplayz">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Clint.Lawrenze/">Facebook</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/users/28474690/kevlarclint">Stack Overflow</a>
             </li>
         </ul>
     </div>
@@ -258,7 +291,32 @@
         </div>
     </div>
 
-    <div class="extra"></div>
+    <div class="skills" id="socials">
+        <div class="container">
+            <div class="top-info-box mamawjud">
+                <div class="title">SOCIAL MEDIA</div>
+                <p>You can also find me here &nbsp; ;]</p>
+            </div>
+            <div class="bottom-icons">
+                <div class="html anime">
+                    <img src="icon/github.png" alt="github">
+                    <a>GITHUB</a>
+                </div>
+                <div class="css anime">
+                    <img src="icon/facebook.png" alt="facebook">
+                    <a>FACEBOOK</a>
+                </div>
+                <div class="javascript anime">
+                    <img src="icon/youtube.png" alt="youtube">
+                    <a>YOUTUBE</a>
+                </div>
+                <div class="javascript anime">
+                    <img src="icon/so.png" alt="stack overflow">
+                    <a>STACK OVERFLOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
